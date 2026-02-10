@@ -39,19 +39,17 @@ const services = [
 const Services = () => {
     return (
         <section id="hizmetler" className={styles.section}>
-            <div className="container">
-                <h2 className={styles.heading}>Hizmetlerimiz</h2>
-                <div className={styles.grid}>
-                    {services.map((service, index) => (
-                        <div key={index} className={styles.card}>
-                            <div className={styles.icon}>
-                                <service.icon size={48} strokeWidth={1} />
-                            </div>
-                            <h3 className={styles.cardTitle}>{service.name}</h3>
-                            <p className={styles.cardDesc}>{service.desc}</p>
+            <h2 className={styles.heading}>Hizmetlerimiz</h2>
+            <div className={styles.grid}>
+                {services.map((service, index) => (
+                    <div key={index} className={styles.card}>
+                        <div className={styles.icon}>
+                            <service.icon size={48} strokeWidth={1} />
                         </div>
-                    ))}
-                </div>
+                        <h3 className={styles.cardTitle}>{service.name}</h3>
+                        <p className={styles.cardDesc}>{service.desc}</p>
+                    </div>
+                ))}
             </div>
         </section>
     );
