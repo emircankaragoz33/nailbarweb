@@ -32,16 +32,7 @@ const Navbar = () => {
             <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
                 <div className={`container ${styles.inner}`}>
                     <Link href="/" className={styles.logo}>
-                        {/* Logo Image - User should ensure public/logo.png exists */}
-                        <div style={{ position: 'relative', width: '120px', height: '50px' }}>
-                            <Image
-                                src="/logo.png"
-                                alt="Kumi Nail Bar"
-                                fill
-                                style={{ objectFit: 'contain' }}
-                                className={styles.logoImage}
-                            />
-                        </div>
+                        <span className={styles.logoText}>Kumi Nail Bar</span>
                     </Link>
 
                     <ul className={styles.navLinks}>

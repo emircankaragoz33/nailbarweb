@@ -14,6 +14,15 @@ const outfit = Outfit({
   display: "swap",
 });
 
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-great-vibes",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Kumi Nail Bar - Pendik | Modern Nail Art, Protez Tırnak & Güzellik",
   description: "Pendik'te profesyonel manikür, pedikür, kalıcı oje, protez tırnak, nail art ve kaş tasarımı hizmetleri. Kumi Nail Bar'da kendinizi şımartın. Hemen randevu alın!",
@@ -67,7 +76,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className={`${playfair.variable} ${outfit.variable}`}>
+    <html lang="tr" className={`${playfair.variable} ${outfit.variable} ${greatVibes.variable}`}>
       <body className="antialiased">
         {children}
       </body>

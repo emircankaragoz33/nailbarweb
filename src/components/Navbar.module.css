@@ -27,6 +27,14 @@
 .logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+
+.logoText {
+    font-family: var(--font-script);
+    font-size: 2.5rem;
+    color: var(--primary);
+    white-space: nowrap;
 }
 
 .logo span {
@@ -139,6 +147,12 @@
 
 .mobileMenu li {
     margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .logoText {
+        font-size: 1.8rem;
+    }
 }
 
 .mobileMenu a {
