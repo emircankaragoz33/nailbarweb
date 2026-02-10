@@ -71,4 +71,21 @@
     .brand p {
         margin: 0 auto;
     }
+
+    .links,
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .links ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links li {
+        text-align: center;
+    }
 }
