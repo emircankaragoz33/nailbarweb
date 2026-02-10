@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kumi Nail Bar Website
+
+Modern and stylish website for Kumi Nail Bar, built with Next.js and React.
 
 ## Getting Started
 
@@ -16,9 +18,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Logo**: Replace the text "Kumi Nail Bar" in `src/components/Navbar.tsx` and `src/components/Hero.tsx` with your logo image.
+- **Images**: Change the hero background in `src/components/Hero.tsx` or replace `public/hero-bg.webp` if using local file.
+- **Content**: Update services in `src/components/Services.tsx` and contact details in `src/components/Contact.tsx`.
+
+## Tech Stack
+
+- Next.js 15
+- React
+- CSS Modules
+- Lucide Icons
+- Google Fonts (Playfair Display, Outfit)
 
 ## Learn More
 
